@@ -143,11 +143,6 @@ if __name__ == '__main__':
 
                     apple = entity.Apple(empty_fields, (100, 100))
                     apple_rect = pygame.draw.rect(display, "red", apple.rect(field_cell_size))
-                    if apple_rect.collidelist(list(entities.values())) is not -1:
-                        print("COLLIDES! ",apple_rect)
-                        print(empty_fields)
-                        print(entities.values())
-
 
                 snake_parts = list(entities.values())
                 snake_parts.remove(head_rect)
